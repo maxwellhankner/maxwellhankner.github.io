@@ -1,8 +1,13 @@
 :root {
   --clr-background: #eceff1;
+  --clr-off-background: #ffffff;
   --clr-primary: #000000;
   --clr-accent: #f1511b;
   --clr-grey: #7c7c7c;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -12,47 +17,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.dark-mode {
-  --clr-background: #000000;
-  --clr-primary: #ffffff;
-}
-
 body {
-  transition: 0.4s;
   background-color: var(--clr-background);
   color: var(--clr-primary);
 }
 
-/* Navbar */
-.navbar {
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 60px;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-item {
-  color: var(--clr-primary);
-  text-decoration: none;
-  margin: 10px;
-}
-
-.resume-link {
-  color: var(--clr-accent);
-}
-
-.under-navbar {
-  height: 60px;
+body,
+p,
+i {
+  transition: 0.4s;
 }
 
 /* Dark Mode Toggle */
+.dark-mode {
+  --clr-background: #000000;
+  --clr-off-background: #151515;
+  --clr-primary: #ffffff;
+}
+
 .wrapper-color-switch {
   display: flex;
   justify-content: center;
@@ -80,7 +62,7 @@ body {
   top: 2px;
   left: 2px;
   cursor: pointer;
-  transition: all 250ms ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .color-switch::before {
@@ -104,12 +86,46 @@ body {
   display: none;
 }
 
+/* Navbar */
+.navbar {
+  z-index: 99;
+  transition: 0.4s;
+  background-color: var(--clr-background);
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 70px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  color: var(--clr-primary);
+  text-decoration: none;
+  margin: 10px;
+  font-size: 17px;
+}
+
+.resume-link {
+  color: var(--clr-accent);
+  border: var(--clr-accent) solid 2px;
+  border-radius: 3px;
+  padding: 8px 12px;
+  background-color: var(--clr-background);
+  transition: 0.4s;
+}
+
 /* Socials Bar */
 .socials-bar {
   position: fixed;
   right: 0;
   bottom: 0;
-  margin-right: 20px;
+  margin-right: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -127,4 +143,147 @@ body {
   width: 2px;
   height: 40px;
   background-color: var(--clr-primary);
+}
+
+/* All Sections */
+.section-header {
+  color: var(--clr-accent);
+  font-weight: normal;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+/* Home */
+#home {
+  height: 100vh;
+}
+
+.greeting {
+  padding-left: 15%;
+  padding-top: 220px;
+}
+.greeting-small {
+  color: var(--clr-primary);
+  margin: 10px;
+  font-size: 26px;
+}
+
+.greeting-large {
+  color: var(--clr-primary);
+  margin: 10px;
+  margin-left: 7px;
+  font-size: 74px;
+}
+
+.full-stack-greeting {
+  color: var(--clr-accent);
+}
+
+/* About */
+#about {
+  max-width: 900px;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 33vh;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-left {
+  flex: 1;
+}
+
+.portrait-image {
+  width: 100%;
+  filter: grayscale(100%);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.portrait-image:hover {
+  filter: none;
+  transform: scale(1.02);
+  transition: 0.4s;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tech-list p {
+  margin: 10px;
+  margin-left: 0px;
+  transition: 0s;
+}
+
+.tech-list p:hover {
+  color: var(--clr-accent);
+}
+
+.about-right {
+  flex: 3;
+}
+
+.about-right p {
+  margin: 0;
+  margin-left: 30px;
+  font-size: 20px;
+  transition: 0s;
+}
+
+.about-uofm {
+  color: var(--clr-accent);
+}
+
+/* Projects */
+
+#projects {
+  max-width: 900px;
+  margin: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 33vh;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card {
+  width: 100%;
+  background-color: var(--clr-off-background);
+  /* margin: 20px; */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.middle-card {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-card h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 10px;
+  transition: 0s;
 }
