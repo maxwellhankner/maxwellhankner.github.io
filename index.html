@@ -5,29 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Max's Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="navbar">
-      <div>
-        <button>-</button>
-        <p>D A R K</p>
+      <div class="wrapper-color-switch">
+        <input type="checkbox" id="input-color-switch" />
+        <label for="input-color-switch" class="color-switch">
+          <div class="color-switch-toggle"></div>
+        </label>
       </div>
+
       <div>
-        <a class="nav-item" href="#home">home</a>
-        <a class="nav-item" href="#about">about</a>
-        <a class="nav-item" href="#projects">projects</a>
-        <a class="nav-item" href="#contact">contact</a>
+        <a class="nav-item" href="#home">Home</a>
+        <a class="nav-item" href="#about">About</a>
+        <a class="nav-item" href="#projects">Projects</a>
+        <a class="nav-item" href="#contact">Contact</a>
         <a
           class="nav-item resume-link"
           href="/assets/resume.pdf"
           target="_blank"
-          >resume</a
+          >Resume</a
         >
       </div>
     </div>
-    <div id="home"><p>home</p></div>
-    <div id="about"><p>about</p></div>
-    <div id="projects"><p>projects</p></div>
-    <div id="contact"><p>contact</p></div>
+    <div class="under-navbar"></div>
+    <div class="socials-bar">
+      <div class="social-option">
+        <a href="https://github.com/maxwellhankner/" target="_blank">
+          <i class="fa fa-github-square"></i>
+        </a>
+      </div>
+      <div class="social-option">
+        <a href="https://www.linkedin.com/in/maxwell-hankner/" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
+      <div class="socials-line"></div>
+    </div>
+    <div id="home"><p>Home</p></div>
+    <div id="about"><p>About</p></div>
+    <div id="projects"><p>Projects</p></div>
+    <div id="contact"><p>Contact</p></div>
   </body>
 </html>
