@@ -66,7 +66,7 @@ i {
 }
 
 .color-switch::before {
-  content: "L I G H T";
+  content: 'L I G H T';
   position: absolute;
   display: inline-block;
   width: 120px;
@@ -79,7 +79,7 @@ i {
 }
 
 #input-color-switch:checked ~ .color-switch::before {
-  content: "D A R K";
+  content: 'D A R K';
 }
 
 #input-color-switch {
@@ -146,6 +146,17 @@ i {
 }
 
 /* All Sections */
+.section {
+  height: 100vh;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .section-header {
   color: var(--clr-accent);
   font-weight: normal;
@@ -154,24 +165,17 @@ i {
 }
 
 /* Home */
-#home {
-  height: 100vh;
-}
-
-.greeting {
-  padding-left: 15%;
-  padding-top: 220px;
-}
 .greeting-small {
   color: var(--clr-primary);
-  margin: 10px;
+  margin: 0px;
+  margin-top: 10px;
   font-size: 26px;
 }
 
 .greeting-large {
   color: var(--clr-primary);
-  margin: 10px;
-  margin-left: 7px;
+  margin: 0px;
+  margin-top: 10px;
   font-size: 74px;
 }
 
@@ -180,14 +184,6 @@ i {
 }
 
 /* About */
-#about {
-  max-width: 900px;
-  margin: auto;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-bottom: 33vh;
-}
-
 .about-container {
   display: flex;
 }
@@ -240,17 +236,10 @@ i {
 }
 
 /* Projects */
-#projects {
-  max-width: 900px;
-  margin: auto;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-bottom: 33vh;
-}
-
 .projects-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
 }
 
 .project-card {
@@ -260,11 +249,6 @@ i {
   overflow: hidden;
   padding-bottom: 10px;
   transition: 0.4s;
-}
-
-.middle-card {
-  margin-right: 20px;
-  margin-left: 20px;
 }
 
 .project-image {
@@ -304,24 +288,19 @@ i {
 
 /* Contact */
 #contact {
-  max-width: 900px;
-  margin: auto;
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-bottom: 30vh;
   text-align: center;
 }
 
 .contact-title {
   font-size: 30px;
   font-weight: bold;
+  margin: 20px;
 }
 
 .contact-para {
   font-size: 20px;
   max-width: 600px;
-  margin: auto;
-  margin-bottom: 40px;
+  margin: 20px auto;
 }
 
 .contact-link {
@@ -332,12 +311,12 @@ i {
   background-color: var(--clr-background);
   transition: 0.4s;
   text-decoration: none;
+  margin: 20px auto;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  /* padding: 5px; */
 }
 
 footer p {
