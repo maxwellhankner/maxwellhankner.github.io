@@ -384,6 +384,17 @@ footer p {
   color: var(--clr-grey);
 }
 
+/* Tablet View */
+@media only screen and (max-width: 900px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-card {
+    margin-bottom: 30px;
+  }
+}
+
 /* Mobile View */
 @media only screen and (max-width: 700px) {
   /* Navbar */
@@ -412,7 +423,8 @@ footer p {
 
   /* All Sections */
   .section {
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   /* Home */
@@ -423,6 +435,7 @@ footer p {
   /* About */
   #about {
     height: unset;
+    margin-bottom: 60px;
   }
 
   .about-container {
@@ -439,5 +452,13 @@ footer p {
 
   .tech-tags-container {
     margin-left: 0;
+  }
+
+  /* Projects */
+  #projects {
+    height: unset;
+  }
+  .projects-container {
+    grid-template-columns: 1fr;
   }
 }
