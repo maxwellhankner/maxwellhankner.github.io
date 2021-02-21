@@ -268,6 +268,7 @@ i {
   margin-top: 30px;
   margin-left: 30px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tech-tag {
@@ -276,6 +277,7 @@ i {
   background-color: var(--clr-off-background);
   margin: 0;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 /* Projects */
@@ -409,6 +411,9 @@ footer p {
   }
 
   /* All Sections */
+  .section {
+    padding: 30px;
+  }
 
   /* Home */
   #home {
@@ -421,6 +426,18 @@ footer p {
   }
 
   .about-container {
-    flex-direction: column;
+    display: unset;
+  }
+
+  .about-left {
+    margin-bottom: 30px;
+  }
+
+  .about-para {
+    margin-left: 0;
+  }
+
+  .tech-tags-container {
+    margin-left: 0;
   }
 }
