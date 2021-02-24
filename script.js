@@ -1,20 +1,18 @@
-var darkMode = document.getElementById('input-color-switch');
+// Dark Mode
+let darkMode = document.getElementById('input-color-switch');
 
-darkMode.addEventListener('click', function () {
+darkMode.addEventListener('click', () => {
   darkMode.classList.toggle('active');
   document.body.classList.toggle('dark-mode');
 });
 
+// Mobile Navbar
 const toggleNav = () => {
   var nav = document.getElementById('nav-items-id');
-  if (nav.className === 'nav-items') {
-    nav.className += ' responsive';
-  } else {
-    nav.className = 'nav-items';
-  }
+  nav.classList.toggle('responsive');
 };
 
 const closeNav = () => {
   var nav = document.getElementById('nav-items-id');
-  nav.className = 'nav-items';
+  nav.classList.remove('responsive');
 };
