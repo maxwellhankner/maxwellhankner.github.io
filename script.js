@@ -5,12 +5,16 @@ darkMode.addEventListener('click', function () {
   document.body.classList.toggle('dark-mode');
 });
 
-function toggleNav() {
-  console.log('toggleNav');
+const toggleNav = () => {
   var nav = document.getElementById('nav-items-id');
   if (nav.className === 'nav-items') {
     nav.className += ' responsive';
   } else {
     nav.className = 'nav-items';
   }
-}
+};
+
+const closeNav = () => {
+  var nav = document.getElementById('nav-items-id');
+  nav.className = 'nav-items';
+};

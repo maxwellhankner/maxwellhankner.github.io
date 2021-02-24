@@ -40,6 +40,8 @@ i {
   justify-content: center;
   align-items: center;
   width: 68px;
+  position: relative;
+  top: 9px;
 }
 
 .color-switch {
@@ -99,7 +101,8 @@ i {
   right: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
 }
 
 .nav-item {
@@ -395,6 +398,10 @@ footer p {
 /* Mobile View */
 @media only screen and (max-width: 700px) {
   /* Navbar */
+  .navbar {
+    /* align-items: unset; */
+    /* justify-content: unset; */
+  }
   .nav-items a:not(:first-child) {
     display: none;
   }
@@ -432,7 +439,7 @@ footer p {
   /* About */
   #about {
     height: unset;
-    margin-bottom: 60px;
+    margin-bottom: 90px;
   }
 
   .about-container {
