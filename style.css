@@ -101,7 +101,6 @@ i {
   right: 0;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   align-items: flex-start;
 }
 
@@ -197,10 +196,14 @@ i {
 }
 
 /* Home */
+#home {
+  height: calc(100vh - 68px);
+}
 .greeting-small {
   color: var(--clr-primary);
   margin: 0px;
   margin-top: 10px;
+  margin-left: 4px;
   font-size: 26px;
 }
 
@@ -432,14 +435,12 @@ footer p {
   }
 
   /* Home */
-  #home {
-    height: 100vh;
-  }
 
   /* About */
   #about {
     height: unset;
     margin-bottom: 90px;
+    padding-top: 68px;
   }
 
   .about-container {
@@ -461,6 +462,7 @@ footer p {
   /* Projects */
   #projects {
     height: unset;
+    padding-top: 68px;
   }
   .projects-container {
     grid-template-columns: 1fr;
