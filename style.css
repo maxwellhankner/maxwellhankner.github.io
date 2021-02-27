@@ -304,6 +304,14 @@ i {
   overflow: hidden;
   padding-bottom: 10px;
   transition: 0.4s;
+  margin-bottom: 30px;
+}
+
+#sole-image {
+  width: 100%;
+  padding-top: 56.25%;
+  background-image: url('/assets/sole-composer.jpg');
+  background-size: cover;
 }
 
 .project-image {
@@ -403,10 +411,6 @@ footer p {
 @media only screen and (max-width: 900px) {
   .projects-container {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .project-card {
-    margin-bottom: 30px;
   }
 }
 
