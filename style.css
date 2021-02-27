@@ -178,7 +178,6 @@ i {
 
 /* All Sections */
 .section {
-  /* height: 100vh; */
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -291,7 +290,6 @@ i {
 /* Projects */
 #projects {
   padding-top: 68px;
-  /* height: calc(100vh - 68px); */
 }
 .projects-container {
   display: grid;
