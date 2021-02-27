@@ -34,3 +34,37 @@ soleImage.addEventListener(
   },
   false
 );
+
+const heintzImage = document.getElementById('heintz-image');
+heintzImage.addEventListener(
+  'mouseover',
+  () => {
+    let now = Date.now();
+    heintzImage.style.backgroundImage = `url('/assets/heintz-co.gif?${now}')`;
+  },
+  false
+);
+heintzImage.addEventListener(
+  'mouseout',
+  () => {
+    heintzImage.style.backgroundImage = "url('/assets/heintz-co.jpg')";
+  },
+  false
+);
+
+const squiggleImage = document.getElementById('squiggle-image');
+squiggleImage.addEventListener(
+  'mouseover',
+  () => {
+    let now = Date.now();
+    squiggleImage.style.backgroundImage = `url('/assets/squiggle-pig.gif?${now}')`;
+  },
+  false
+);
+squiggleImage.addEventListener(
+  'mouseout',
+  () => {
+    squiggleImage.style.backgroundImage = "url('/assets/squiggle-pig.jpg')";
+  },
+  false
+);

@@ -314,6 +314,20 @@ i {
   background-size: cover;
 }
 
+#squiggle-image {
+  width: 100%;
+  padding-top: 56.25%;
+  background-image: url('/assets/squiggle-pig.jpg');
+  background-size: cover;
+}
+
+#heintz-image {
+  width: 100%;
+  padding-top: 56.25%;
+  background-image: url('/assets/heintz-co.jpg');
+  background-size: cover;
+}
+
 .project-image {
   width: 100%;
 }
