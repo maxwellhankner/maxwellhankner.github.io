@@ -153,6 +153,14 @@ i {
   display: none;
 }
 
+.nav-social {
+  display: none;
+}
+
+.nav-social i {
+  font-size: 30px;
+}
+
 /* Socials Bar */
 .socials-bar {
   position: fixed;
@@ -457,6 +465,10 @@ footer p {
     margin-right: 0;
     clear: both;
     float: right;
+  }
+
+  .nav-social {
+    display: inline-block;
   }
 
   /* Socials Bar */
