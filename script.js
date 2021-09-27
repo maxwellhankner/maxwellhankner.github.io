@@ -35,6 +35,24 @@ soleImage.addEventListener(
   false
 );
 
+// const calculatorImage = document.getElementById('calculator-image');
+// calculatorImage.addEventListener(
+//   'mouseover',
+//   () => {
+//     let now = Date.now();
+//     calculatorImage.style.backgroundImage = `url('/assets/sole-composer.gif?${now}')`;
+//   },
+//   false
+// );
+// calculatorImage.addEventListener(
+//   'mouseout',
+//   () => {
+//     calculatorImage.style.backgroundImage =
+//       "url('/assets/calculator-watch.jpg')";
+//   },
+//   false
+// );
+
 const heintzImage = document.getElementById('heintz-image');
 heintzImage.addEventListener(
   'mouseover',
